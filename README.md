@@ -1,3 +1,3 @@
 # BBB-GPIO-GO
-It is a GOlang implements BeagleBoneBlack GPIO controll.
+It is a BeagleBoneBlack GPIO controll implements of GOLANG.
 Now Developing.
