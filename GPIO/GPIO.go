@@ -55,9 +55,9 @@ func (e *bbb_gpio) Error() string{
 func Start()  (*bbb_gpio,error){
         if gpio.state != set && gpio.state != ERROR{
                 gpio.pin = make([][]int,10)
-                gpio.pin[8] = pin_map[8]
-                gpio.pin[9] = pin_map[9]
+                copy(gpio.pin[8],pin_map[8])
+                copy(gpio.pin[9],pin_map[9])
                 
         }
-        return gpio,nil
+        return &gpio,nil
 }
