@@ -43,7 +43,7 @@ var pin_map = map[int][]int{
         9: []int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 60, 31, 50, 48, 51, 5, 4, 0, 0, 3, 2, 49, 15, 117, 14, 115, 123, 121, 122, 120, 0, 0, 0, 0, 0, 0, 0, 0, 20, 7, 0, 0, 0, 0},
 }
 
-var gpio bbb_gpio = bbb_gpio{}
+var gpio *bbb_gpio = new(bbb_gpio)
 
 func (e *bbb_gpio) Error() string{
 	if e.state == ERROR{
