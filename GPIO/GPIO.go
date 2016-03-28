@@ -59,5 +59,5 @@ func Start()  (*bbb_gpio,error){
                 copy(gpio.pin[9],pin_map[9])
                 
         }
-        return &gpio,nil
+        return gpio,nil
 }
